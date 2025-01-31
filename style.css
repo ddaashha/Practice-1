@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto/Roboto-Medium.ttf') format("truetype");
+}
+
+/* General styles */
+body {
+    font-family: "Montserrat";
+    font-size: 1em;
+}
+
+.blue-button{
+    text-transform: uppercase;
+    background-color: #7AE5FD;
+    padding: 1.15em 1.94em;
+    border-radius: 4.83rem;
+    margin: 0;
+    border: none;
+}
+
+/* Header styles */
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1em 2em;
+    position: fixed;
+    background-color: white;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+}
+
+.menu-item{
+    margin-left: 3.1em;
+}
+
+
+/* First screen */
+
+
+.first-screen {
+    background-image: url('./images/9d87e92590ae5ecb611ebe146e21a634.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 13vh;
+}
+
+.first-screen-container{
+    padding-top: 1em;
+    padding-left: 7em;
+    max-width: 100%;
+    padding-right: 800px;
+    overflow: hidden;
+}
+
+.main-title {
+    font-weight: 800;
+    font-size: 4.06em;
+    line-height: 1;
+    color: white;
+    margin-bottom: 0.3em;
+}
+.main-description{
+    margin-bottom: 0.9em;
+}
+
+.white-button{
+    background-color: white;
+    border: none;
+    margin-top: 0.7em;
+}
+
+
+/*Second screen*/
+
+.second-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+.second-header{
+    font-size: 3.3em;
+    text-transform: uppercase;
+    text-indent: 60px;
+    margin-bottom: 0.5em;
+}
+
+.second-h4{
+    font-size: 1.5em;
+    margin: 1vh 0;
+    margin-bottom: 0.5em;
+}
+
+.blue-text{
+    font-size: 1.1em;
+    text-align: center;
+    color: #73A6B1;
+}
+
+.second-div {
+    margin-right: 13.3em;
+    margin-left: 19em;
+}
+
+
+/*Articles*/
+
+.description-screen{
+    padding: 5vw;
+}
+
+.description-block{
+    display: flex;
+    background-color: #F1FDFF;
+    padding: 5vh 4vw;
+    margin-top: 4vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.block-img{
+    max-width: 38vw;
+    border-radius: 8px;
+}
+
+.desc-header{
+    font-size: 2.5em;
+    padding-bottom: 2vh;
+
+}
+
+.section-text{
+    padding-right: 10vw;
+}
+.button-from-screen{
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+/*Mission section*/
+
+.mission {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center ;
+
+    padding-left: 80px;
+}
+
+.mission p{
+    font-size: 1.5em;
+    width: 38vw;
+    padding: 3.3em 2.29em;
+}
+
+.mission-content {
+    background-color: #F1FDFF;
+    height: 39.5vh;
+    width: 87vw;
+    margin: 13.75em 5.43em;
+    position: relative;
+    z-index: 1;
+
+}
+
+.mission__lines {
+    position: absolute;
+    left:55%;
+    top: 27%;
+    z-index: 2;
+    width: 40%;
+}
+
+.mission__image {
+    position: absolute;
+    right: 5%;
+    top: 11%;
+    max-width: 47%;
+    z-index: 3;
+}
+
+
+/*Support section*/
+
+
+.support {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    gap: 25px;
+    margin-bottom: 20vh;
+}
+
+.support-p {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+.donate__counter {
+    font-size: 3.1em;
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+
+}
+
+
+
+/*Footer*/
+
+footer {
+    background-color: rgba(250, 250, 230, 1);
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts__title {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #000;
+    min-width: 8.3em;
+}
+
+
+.contacts__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 10vw;
+    margin-right: 11.6em;
+}
+
+.contacts__phone,
+.contacts__chat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts p {
+    font-size: 16px;
+    color: #000;
+}
+
+.icon {
+    width: 1.33em;
+    height: 1.33em;
+    object-fit: contain;
+    margin-top: 3vh;
+}
+
+.chat-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.second-header-contacts {
+    font-size: 3.3em;
+    text-transform: uppercase;
+    text-indent: 60px;
+    padding-right: 12vw;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+
+
+/* Newsletter section */
+.newsletter {
+    margin: 4.4em;
+    background-color: white;
+    max-height: 50vh;
+    flex-grow: 1;
+    padding-bottom: 2.7em;
+}
+
+.newsletter__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 65.444em;
+    padding: 3.333em;
+}
+
+.newsletter__image {
+    position: relative;
+    width: 30.055em;
+    height: 19.3em;
+    margin-right: 5.5em;
+}
+
+.envelope {
+    width: 100%;
+}
+
+.newsletter__form {
+    max-width: 400px;
+    margin-left: 93px;
+    margin-right: 55px;
+}
+
+.newsletter__title {
+    font-size: 1.5em;
+    margin-bottom: 1.6em;
+    color: #000;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+
+.form-input {
+    width: 100%;
+    height: 2.222em;
+    padding: 0.444em 0.889em;
+    background-color: rgba(250, 250, 230, 1);
+    border: 1px solid #E5E5E5;
+    border-radius: 2.833em;
+    font-size: 1rem;
+}
+
+.form-input::placeholder {
+    color: #000000;
+    margin-left: 0.6em;
+    line-height: 1.3em;
+    font-size: 0.9em;
+}
+
